@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wdth@75..100&display=swap');
+
+:root {
+    --primary-color: rgb(27, 103, 109);
+    --dark-color: rgb(16, 61, 65);
+    }
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+.container {
+    max-width: 540px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.calculator {
+    width: 100%;
+}
+
+.display {
+    font-size: 2em;
+    width: 100%;
+    text-align: rigth;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    border: none;
+    background-color: rgb(197, 197, 197);
+}
+
+.button:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.button-equal {
+    background-color: rgb(153, 194, 129);
+}
+
+.button-equal:hover {
+    background-color: rgb(62, 172, 72);
+}
+
+.button-clear {
+    background-color: rgb(194, 129, 129);
+}
+
+.button-clear:hover {
+    background-color: rgb(172, 62, 62);
+}
