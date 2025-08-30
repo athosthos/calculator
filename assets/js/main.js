@@ -6,7 +6,10 @@ function Calculator() {
         this.pressEnter();
     }
 
-    this.buttonToDisplay = (value) => this.display.value += value;
+    this.buttonToDisplay = (value) => {
+        this.display.value += value;
+        this.display.focus(); //volta o foco para o display
+    }
     
     this.clearDisplay = () => this.display.value = '';
 
@@ -38,9 +41,7 @@ function Calculator() {
     
     this.pressEnter = () => {
         document.addEventListener('keyup', (e) => {
-            if (e.key === 'Enter') {
-                this.calculate();
-            }
+            if (e.key === 'Enter') this.calculate();            
         })
     }
 }
